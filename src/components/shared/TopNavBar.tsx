@@ -48,7 +48,7 @@ const TopNavBar = () => {
       path: "/",
     },
   ];
-  const handleScroll = (e: any) => {
+  const handleScroll = () => {
     setScrollPossition(window.scrollY);
   };
   useEffect(() => {

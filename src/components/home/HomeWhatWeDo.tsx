@@ -11,7 +11,7 @@ const HomeWhatWeDo = () => {
   }: {
     icon: any;
     label: string;
-    description: String;
+    description: string;
   }) => {
     return (
       <Card className="p-4">
