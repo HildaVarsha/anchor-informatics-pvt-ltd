@@ -3,7 +3,7 @@ import React from "react";
 
 const CareerLife = () => {
   return (
-    <div className="py-24 bg-slate-100">
+    <div className="px-4 md:px-0 py-24 bg-slate-100">
       <div className="container mx-auto flex flex-col items-center justify-center">
         <h1 className="text-5xl font-bold text-center">
           Career Life At Anchor

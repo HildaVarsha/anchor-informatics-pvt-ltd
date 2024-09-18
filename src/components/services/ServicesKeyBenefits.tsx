@@ -20,7 +20,7 @@ const ServicesKeyBenefits = () => {
     <div className="bg-slate-200 py-24">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold text-center">Key Benefits</h1>
-        <div className="py-12 grid grid-cols-2 gap-8 ">
+        <div className="px-4 md:px-0 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 ">
           <CardComp />
           <CardComp />
           <CardComp />

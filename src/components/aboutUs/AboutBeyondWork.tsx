@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutBeyondWork = () => {
   return (
     <div>
-      <div className="py-24 container mx-auto flex items-center justify-between gap-8">
+      <div className="px-4 md:px-0 py-24 container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="w-full">
           <Image
             src={

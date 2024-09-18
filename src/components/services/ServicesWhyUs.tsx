@@ -8,7 +8,7 @@ import {
 
 const ServicesWhyUs = () => {
   return (
-    <div className="py-24 container mx-auto">
+    <div className="px-4 md:px-0 py-24 container mx-auto">
       <h1 className="text-5xl font-bold">Why Us?</h1>
       <div className="py-12">
         <Accordion type="single" collapsible className="w-full">
