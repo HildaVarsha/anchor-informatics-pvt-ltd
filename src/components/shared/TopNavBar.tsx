@@ -2,21 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  AlertDialog,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-  Button,
-  Input,
-  Textarea,
-} from "../ui";
+import { usePathname } from "next/navigation";
+import ContactForm from "./ContactUs";
 
 const TopNavBar = () => {
+  const pathname = usePathname();
   const navBarData = [
     {
       id: 1,
@@ -45,51 +35,13 @@ const TopNavBar = () => {
       path: "/careers",
     },
   ];
-  const AlertComponent = () => {
-    return (
-      <AlertDialog>
-        <AlertDialogTrigger>
-          <Button className="rounded-3xl h-10">Book A Call</Button>
-        </AlertDialogTrigger>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle className="text-3xl font-bold text-pink-600">
-              Contact Us
-            </AlertDialogTitle>
-            <AlertDialogDescription>
-              Our Team will contact you within two days of working days
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <div className="pb-2">
-            <h1 className="font-semibold pb-2">Name</h1>
-            <Input className="h-12" placeholder="Your Name" />
-          </div>
-          <div className="pb-2">
-            <h1 className="font-semibold pb-2">Email</h1>
-            <Input className="h-12" placeholder="Your Email" type="email" />
-          </div>
-          <div>
-            <h1 className="font-semibold pb-2">Message</h1>
-            <Textarea className="h-24" placeholder="Your Content" />
-          </div>
-
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <Button className="">Send</Button>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-    );
-  };
 
   return (
     <div className="w-full  bg-transparent border-b border-pink-600">
       <div className="flex items-center justify-between container mx-auto py-3">
         <Link href={"/"}>
           <Image
-            src={
-              "https://images.pexels.com/photos/7260948/pexels-photo-7260948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            }
+            src={"/logo.jpg"}
             alt="Anchor Informatics"
             width={100}
             height={100}
@@ -102,14 +54,18 @@ const TopNavBar = () => {
               <Link
                 href={navbar?.path}
                 key={navbar?.id}
-                className="hover:text-pink-600 font-medium"
+                className={`font-bold ${
+                  pathname == navbar?.path
+                    ? "text-pink-600 hover:text-pink-700"
+                    : "hover:text-pink-600 "
+                }`}
                 title={navbar?.name}
               >
                 {navbar?.name}
               </Link>
             )
           )}
-          <AlertComponent />
+          <ContactForm />
         </div>
       </div>
     </div>
