@@ -17,15 +17,15 @@ const TopNavBar = () => {
       name: "Services",
       path: "/services",
     },
-    {
-      id: 3,
-      name: "Pricing",
-      path: "/",
-    },
+    // {
+    //   id: 3,
+    //   name: "Pricing",
+    //   path: "/",
+    // },
     {
       id: 4,
       name: "About Us",
-      path: "/",
+      path: "/about-us",
     },
     {
       id: 5,
