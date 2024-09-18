@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "../ui";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MailIcon } from "lucide-react";
+import { MailIcon } from "lucide-react";
 
 const AboutMeetCEO = () => {
   return (

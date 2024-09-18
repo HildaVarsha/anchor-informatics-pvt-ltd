@@ -1,27 +1,39 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { Button } from "../ui";
+import React from "react";
+import {
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  Button,
+  Input,
+  Textarea,
+} from "../ui";
 
 const TopNavBar = () => {
-  const [scrollPossition, setScrollPossition] = useState(0);
   const navBarData = [
     {
       id: 1,
-      name: "Work",
-      path: "/work",
+      name: "Home",
+      path: "/",
     },
     {
       id: 2,
       name: "Services",
       path: "/services",
     },
-    // {
-    //   id: 3,
-    //   name: "Pricing",
-    //   path: "/",
-    // },
+    {
+      id: 3,
+      name: "Work",
+      path: "/work",
+    },
+
     {
       id: 4,
       name: "About Us",
@@ -30,36 +42,45 @@ const TopNavBar = () => {
     {
       id: 5,
       name: "Careers",
-      path: "/",
-    },
-    {
-      id: 6,
-      name: "Tech",
-      path: "/",
-    },
-    {
-      id: 7,
-      name: "Blog",
-      path: "/",
-    },
-    {
-      id: 8,
-      name: "Podcast",
-      path: "/",
+      path: "/careers",
     },
   ];
-  const handleScroll = () => {
-    setScrollPossition(window.scrollY);
+  const AlertComponent = () => {
+    return (
+      <AlertDialog>
+        <AlertDialogTrigger>
+          <Button className="rounded-3xl h-10">Book A Call</Button>
+        </AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle className="text-3xl font-bold text-pink-600">
+              Contact Us
+            </AlertDialogTitle>
+            <AlertDialogDescription>
+              Our Team will contact you within two days of working days
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <div className="pb-2">
+            <h1 className="font-semibold pb-2">Name</h1>
+            <Input className="h-12" placeholder="Your Name" />
+          </div>
+          <div className="pb-2">
+            <h1 className="font-semibold pb-2">Email</h1>
+            <Input className="h-12" placeholder="Your Email" type="email" />
+          </div>
+          <div>
+            <h1 className="font-semibold pb-2">Message</h1>
+            <Textarea className="h-24" placeholder="Your Content" />
+          </div>
+
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <Button className="">Send</Button>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    );
   };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, []);
-  let opacity =
-    scrollPossition > 1
-      ? parseFloat((scrollPossition / 1.2 / 130).toFixed(1))
-      : 0.1;
-  opacity = Math.min(opacity, 1);
-  opacity < 0.1 ? 0.1 : opacity;
 
   return (
     <div className="w-full  bg-transparent border-b border-pink-600">
@@ -88,7 +109,7 @@ const TopNavBar = () => {
               </Link>
             )
           )}
-          <Button className="rounded-3xl h-10">Book A Call</Button>
+          <AlertComponent />
         </div>
       </div>
     </div>
