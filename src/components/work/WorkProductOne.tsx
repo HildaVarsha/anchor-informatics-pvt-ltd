@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const WorkProductOne = () => {
   return (
-    <div className="bg-blue-700 py-24">
-      <div className="container mx-auto flex items-center gap-8">
+    <div className="bg-blue-700 py-24 px-4 md:px-0">
+      <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="w-full">
           <h1 className="text-white text-5xl font-bold">Fave</h1>
           <h1 className="text-2xl text-white py-4">

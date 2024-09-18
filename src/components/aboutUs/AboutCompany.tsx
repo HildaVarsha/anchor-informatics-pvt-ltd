@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutCompany = () => {
   return (
-    <div className="py-24 container mx-auto flex items-center justify-between gap-8">
+    <div className="px-4 md:px-0 py-24 container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
       <div className="w-full">
         <h1 className="text-5xl font-bold pb-6">Hello, we’re Altar.</h1>
         <p className="text-lg pb-6">

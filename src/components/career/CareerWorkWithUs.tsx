@@ -16,12 +16,12 @@ const CareerWorkWithUs = () => {
     );
   };
   return (
-    <div className="py-24 bg-blue-950">
+    <div className="px-4 md:px-0 py-24 bg-blue-950">
       <div className="container mx-auto">
         <h1 className="text-5xl font-bold text-center text-white">
           What it Means to Work With Us
         </h1>
-        <div className="pt-12 grid grid-cols-2 gap-8">
+        <div className="pt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           <CareerCard />
           <CareerCard />
           <CareerCard />

@@ -15,7 +15,7 @@ const ServicesBanner = () => {
     >
       <div className="max-w-lg">
         <h1 className="text-6xl font-bold">Our services</h1>
-        <p className="text-lg py-4">
+        <p className="text-lg py-4 px-4 md:px-0">
           The products we build are changing the way industry leaders do their
           core business.
         </p>

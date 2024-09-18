@@ -11,10 +11,10 @@ const WorkProductFour = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100vw", // Full width of the viewport
-        height: "600px",
       }}
+      className="h-full md:h-[600px]"
     >
-      <div className="container mx-auto flex items-center gap-8 py-24">
+      <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 py-24 px-4 md:px-0">
         <div className="w-full">
           <h1 className=" text-5xl font-bold text-white">Fave</h1>
           <h1 className="text-2xl  py-4 text-white">

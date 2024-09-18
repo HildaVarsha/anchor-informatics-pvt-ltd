@@ -33,7 +33,7 @@ const ServicesOutput = () => {
     );
   };
   return (
-    <div className="pb-24 bg-blue-950">
+    <div className="px-4 md:px-0 pb-24 bg-blue-950">
       <div className="container mx-auto py-24">
         <h1 className="text-4xl font-bold text-center text-white">
           Output From The Services

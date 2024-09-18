@@ -13,11 +13,11 @@ const WorkBanner = () => {
       }}
       className="flex items-center justify-center h-[600px]"
     >
-      <div className="max-w-lg">
+      <div className="max-w-lg px-4 md:px-0">
         <h1 className="text-6xl font-bold">
           We take digital experiences to the next level
         </h1>
-        <p className="text-lg py-4">
+        <p className="text-lg py-4 ">
           The products we build are changing the way industry leaders do their
           core business.
         </p>

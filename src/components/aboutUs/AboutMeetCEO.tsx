@@ -6,9 +6,9 @@ import { MailIcon } from "lucide-react";
 
 const AboutMeetCEO = () => {
   return (
-    <div className="pb-24 container mx-auto">
+    <div className="px-4 md:px-0 pb-24 container mx-auto">
       <h1 className="text-5xl font-bold pb-8">Meet the Founders </h1>
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <Card className="p-2 w-full">
           <Image
             src={

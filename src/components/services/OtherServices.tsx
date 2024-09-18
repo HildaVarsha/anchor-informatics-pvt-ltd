@@ -22,12 +22,12 @@ const OtherServices = () => {
     );
   };
   return (
-    <div className="pb-24 container mx-auto">
+    <div className="px-4 md:px-0 pb-24 container mx-auto">
       <h1 className="text-4xl font-bold text-center">
         Other Services We provide
       </h1>
       <div className="py-12">
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col md:flex-row items-center gap-6">
           <CardComponent
             icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
             label="Product Scope"
@@ -50,7 +50,7 @@ const OtherServices = () => {
             }
           />
         </div>
-        <div className="flex items-center justify-center gap-6 pt-6 max-w-3xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-6 max-w-3xl mx-auto">
           <CardComponent
             icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
             label="Product Scope"

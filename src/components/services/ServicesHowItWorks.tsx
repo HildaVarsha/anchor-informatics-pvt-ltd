@@ -16,7 +16,7 @@ const ServicesHowItWorks = () => {
           products value proposition.
         </p>
         <h4 className="py-4 font-bold">Phase deliverables:</h4>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <li>Comprehensive Brief</li>
           <li>Comprehensive Brief</li>
           <li>Comprehensive Brief</li>
@@ -28,7 +28,7 @@ const ServicesHowItWorks = () => {
     );
   };
   return (
-    <div className="pb-24 bg-slate-200">
+    <div className="px-4 md:px-0 pb-24 bg-slate-200">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold text-center">How It Works</h1>
         <div className="py-12 grid grid-cols-1 gap-8 ">
