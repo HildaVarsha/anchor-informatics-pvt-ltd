@@ -65,9 +65,7 @@ const MobileNavBar = () => {
     <div className="bg-white shadow border-b border-pink-700 flex items-center justify-between h-16 w-full px-4">
       <SheetComp />
       <Image
-        src={
-          "https://images.pexels.com/photos/14354107/pexels-photo-14354107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        }
+        src={"/logo.jpg"}
         alt="Anchor Informatics"
         width={100}
         height={100}

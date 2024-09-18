@@ -30,7 +30,7 @@ const TalkAbout = () => {
   };
   return (
     <div className="bg-slate-800">
-      <div className="container mx-auto px-4 md:pt-0 py-16 flex flex-col md:flex-row justify-between">
+      <div className="container mx-auto px-4 md:px-0 py-16 flex flex-col md:flex-row justify-between">
         <div>
           <Image
             src={"/"}
