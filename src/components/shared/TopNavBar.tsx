@@ -1,11 +1,26 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import ContactForm from "./ContactUs";
 
 const TopNavBar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+      // Add event listener
+      window.addEventListener('scroll', handleScroll);
+
+      // Cleanup function to remove the event listener
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
   const pathname = usePathname();
   const navBarData = [
     {
@@ -35,9 +50,16 @@ const TopNavBar = () => {
       path: "/careers",
     },
   ];
-
+  const aValue = Math.min(Math.max(scrollPosition / 100, 0.1), 1)
+  // Math.min(scrollPosition / 100, 4);
   return (
-    <div className="w-full  bg-transparent border-b border-pink-600">
+    <div
+    style={{
+      borderColor: `rgba(219, 39, 119, ${aValue})`,
+      background:`rgba(255, 255, 255, ${aValue} )`,  position: 'fixed',
+    top: 0,
+    zIndex: 1000,}}
+    className="w-full  border-b border-pink-600">
       <div className="flex items-center justify-between container mx-auto py-3">
         <Link href={"/"}>
           <Image

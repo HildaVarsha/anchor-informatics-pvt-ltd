@@ -25,12 +25,7 @@ const HomeWhatWeDo = () => {
     <div className="px-4 md:px-0 py-24 container mx-auto">
       <h1 className="text-4xl font-bold text-slate-900">What We Do</h1>
       <p className="py-4 text-lg max-w-3xl">
-        We help entrepreneurs and business leaders build and launch innovative
-        custom software solutions to the market across a range of verticals &
-        industries. We can help you turn your vision into a successful product
-        together, whether it’s in the form of a Minimum Viable Product, UX/UI
-        services, full product custom software development or help to scale your
-        company.
+        We assist entrepreneurs and business leaders in developing and launching unique bespoke software solutions to the market across a variety of verticals and industries. We can work with you to transform your idea into a successful product, whether that's through a Minimum Viable Product, UX/UI services, complete product bespoke software development, or assistance with company scaling.
       </p>
       <div className="py-12">
         <div className="flex flex-col md:flex-row items-center gap-6">
