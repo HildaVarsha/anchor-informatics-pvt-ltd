@@ -23,7 +23,7 @@ const HomeNews = () => {
     );
   };
   return (
-    <div className="pb-24 container mx-auto">
+    <div className="px-4 md:px-0 pb-24 container mx-auto">
       <h1 className="text-5xl font-bold">News</h1>
       <p className="text-lg py-4">
         Industry leaders entrust their business visions to us.

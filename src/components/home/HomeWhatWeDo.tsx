@@ -22,7 +22,7 @@ const HomeWhatWeDo = () => {
     );
   };
   return (
-    <div className="py-24 container mx-auto">
+    <div className="px-4 md:px-0 py-24 container mx-auto">
       <h1 className="text-4xl font-bold text-slate-900">What We Do</h1>
       <p className="py-4 text-lg max-w-3xl">
         We help entrepreneurs and business leaders build and launch innovative
@@ -33,7 +33,7 @@ const HomeWhatWeDo = () => {
         company.
       </p>
       <div className="py-12">
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col md:flex-row items-center gap-6">
           <CardComponent
             icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
             label="Product Scope"
@@ -56,7 +56,7 @@ const HomeWhatWeDo = () => {
             }
           />
         </div>
-        <div className="flex items-center justify-center gap-6 pt-6 max-w-3xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-6 max-w-3xl mx-auto">
           <CardComponent
             icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
             label="Product Scope"
@@ -73,7 +73,7 @@ const HomeWhatWeDo = () => {
           />
         </div>
       </div>
-      <div className="pt-12 flex gap-12 justify-between">
+      <div className="pt-12 flex flex-col md:flex-row gap-12 justify-between">
         <Image
           src={
             "https://images.pexels.com/photos/653429/pexels-photo-653429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

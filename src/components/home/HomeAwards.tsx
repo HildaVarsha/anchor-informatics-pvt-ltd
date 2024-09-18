@@ -14,13 +14,13 @@ const HomeAwards = () => {
     );
   };
   return (
-    <div className="pb-24 container mx-auto">
+    <div className="px-4 md:px-0 pb-24 container mx-auto">
       <h1 className="text-5xl font-bold">Awards</h1>
       <p className="text-lg py-6 max-w-lg">
         We are voted a Top Firm by Entrepreneurs and Business Leaders just like
         you.
       </p>
-      <div className="grid grid-cols-6 gap-8 py-6 gap-y-32">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 py-6 gap-y-32">
         <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
         <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
         <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />

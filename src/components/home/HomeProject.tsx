@@ -43,43 +43,21 @@ const HomeProject = () => {
           width: "100vw", // Full width of the viewport
           height: "100hw",
         }}
-        className=""
+        className="px-4 md:px-0"
       >
-        <div className="flex h-full items-center justify-center container mx-auto gap-8 py-24">
+        <div className="flex flex-col md:flex-row h-full items-center justify-center container mx-auto gap-8 py-24">
           <ProjectContent
             title={"SOCIAL MEDIA"}
             description={
               "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences."
             }
           />
-          <div className="w-full flex items-center justify-end">
+          <div className="w-full flex items-center justify-center md:justify-end">
             <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
           </div>
         </div>
-        <div className="flex h-full  items-center justify-center container mx-auto gap-8 py-24">
-          <div className="w-full flex items-center">
-            <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-          </div>
-          <ProjectContent
-            title={"SOCIAL MEDIA"}
-            description={
-              "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences."
-            }
-          />
-        </div>
-        <div className="flex h-full items-center justify-center container mx-auto gap-8 py-24">
-          <ProjectContent
-            title={"SOCIAL MEDIA"}
-            description={
-              "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences."
-            }
-          />
-          <div className="w-full flex items-center justify-end">
-            <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-          </div>
-        </div>
-        <div className="flex h-full  items-center justify-center container mx-auto gap-8 py-24">
-          <div className="w-full flex items-center">
+        <div className="flex flex-col md:flex-row h-full  items-center justify-center container mx-auto gap-8 py-24">
+          <div className="w-full flex items-center justify-center md:justify-start">
             <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
           </div>
           <ProjectContent
@@ -89,19 +67,41 @@ const HomeProject = () => {
             }
           />
         </div>
-        <div className="flex h-full items-center justify-center container mx-auto gap-8 py-24">
+        <div className="flex flex-col md:flex-row h-full items-center justify-center container mx-auto gap-8 py-24">
           <ProjectContent
             title={"SOCIAL MEDIA"}
             description={
               "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences."
             }
           />
-          <div className="w-full flex items-center justify-end">
+          <div className="w-full flex items-center justify-center md:justify-end">
             <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
           </div>
         </div>
-        <div className="flex h-full  items-center justify-center container mx-auto gap-8 py-24">
-          <div className="w-full flex items-center">
+        <div className="flex h-full flex-col md:flex-row items-center justify-center container mx-auto gap-8 py-24">
+          <div className="w-full flex items-center justify-center md:justify-start">
+            <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+          </div>
+          <ProjectContent
+            title={"SOCIAL MEDIA"}
+            description={
+              "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences."
+            }
+          />
+        </div>
+        <div className="flex flex-col md:flex-row h-full items-center justify-center container mx-auto gap-8 py-24">
+          <ProjectContent
+            title={"SOCIAL MEDIA"}
+            description={
+              "Fave is a fandom-centric community with highly engaging content where fans can create deeper and lasting connections. The vision to nurture and grow the community is centered on rewarding positive and meaningful engagement with points that can be redeemed for discounts and exclusive experiences."
+            }
+          />
+          <div className="w-full flex items-center justify-center md:justify-end">
+            <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row h-full  items-center justify-center container mx-auto gap-8 py-24">
+          <div className="w-full flex items-center justify-center md:justify-start">
             <ImageComponent src="https://images.pexels.com/photos/2228574/pexels-photo-2228574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
           </div>
           <ProjectContent

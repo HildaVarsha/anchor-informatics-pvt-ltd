@@ -5,7 +5,7 @@ import { Button } from "../ui";
 const TalkAbout = () => {
   const LocationComp = () => {
     return (
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
         <Image
           src={"/"}
           alt="Location"
@@ -30,7 +30,7 @@ const TalkAbout = () => {
   };
   return (
     <div className="bg-slate-800">
-      <div className="container mx-auto py-16 flex justify-between">
+      <div className="container mx-auto px-4 md:pt-0 py-16 flex flex-col md:flex-row justify-between">
         <div>
           <Image
             src={"/"}
@@ -46,7 +46,7 @@ const TalkAbout = () => {
             SCHEDULE A CALL
           </Button>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 pt-8 md:pt-0">
           <LocationComp />
           <LocationComp />
           <LocationComp />
