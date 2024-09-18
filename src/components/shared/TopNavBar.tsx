@@ -10,7 +10,7 @@ const TopNavBar = () => {
     {
       id: 1,
       name: "Work",
-      path: "/",
+      path: "/work",
     },
     {
       id: 2,
