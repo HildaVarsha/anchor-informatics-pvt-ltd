@@ -14,8 +14,8 @@ const Footer = () => {
     );
   };
   return (
-    <div className="py-16 bg-black">
-      <div className="container mx-auto flex  justify-between border-b border-slate-600 pb-8">
+    <div className="px-4 md:px-0 py-16 bg-black">
+      <div className="container mx-auto flex  flex-col md:flex-row justify-between border-b border-slate-600 pb-8">
         <div>
           <Image
             src={""}
@@ -53,7 +53,7 @@ const Footer = () => {
           <LinkComp label={"Book a Call"} />
         </div>
       </div>
-      <div className="container mx-auto flex items-center justify-between pt-8">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between pt-8">
         <p className="text-slate-500">
           © 2024 Anchor Informatics All rights reserved.
         </p>

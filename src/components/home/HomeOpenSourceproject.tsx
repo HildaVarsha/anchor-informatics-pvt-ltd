@@ -15,13 +15,13 @@ const HomeOpenSourceproject = () => {
     );
   };
   return (
-    <div className="pb-24 container mx-auto">
+    <div className="px-4 md:px-0 pb-24 container mx-auto">
       <h1 className="text-5xl font-bold">Open Source</h1>
       <p className="text-lg py-6 max-w-lg">
         We are voted a Top Firm by Entrepreneurs and Business Leaders just like
         you.
       </p>
-      <div className="py-6 flex items-center gap-4">
+      <div className="py-6 flex flex-col md:flex-row items-center gap-4">
         <ImageComponent
           src={
             "https://images.pexels.com/photos/7648022/pexels-photo-7648022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

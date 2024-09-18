@@ -36,8 +36,8 @@ const HomeTeamMembers = () => {
     );
   };
   return (
-    <div className="py-24 container mx-auto">
-      <div className="flex items-center justify-center gap-8">
+    <div className="px-4 md:px-0 py-24 container mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <CardComponent
           src={
             "https://images.pexels.com/photos/775091/pexels-photo-775091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
