@@ -35,7 +35,7 @@ const HomeWhatWeDo = () => {
         We assist entrepreneurs and business leaders in developing and launching
         unique bespoke software solutions to the market across a variety of
         verticals and industries. We can work with you to transform your idea
-        into a successful product, whether that's through a Minimum Viable
+        into a successful product, whether thats through a Minimum Viable
         Product, UX/UI services, complete product bespoke software development,
         or assistance with company scaling.
       </p>
@@ -45,21 +45,21 @@ const HomeWhatWeDo = () => {
             icon={<BookText className="w-12 h-12 text-blue-600" />}
             label="Complete Concentration"
             description={
-              "We have an intense two-day session together to get to the heart of the product's value proposition and attain a state of complete attention."
+              "We have an intense two-day session together to get to the heart of the products value proposition and attain a state of complete attention."
             }
           />
           <CardComponent
             icon={<ClipboardPlus className="w-12 h-12 text-pink-600" />}
             label="Lower risk"
             description={
-              "We don't want to assist you create a full-featured product just to realize that the market doesn't want it. We want you to be successful. That is why we focus on the critical elements required to verify your product's primary assumptions, leaving extraneous features behind or preserving them for future versions."
+              "We dont want to assist you create a full-featured product just to realize that the market doesnt want it. We want you to be successful. That is why we focus on the critical elements required to verify your products primary assumptions, leaving extraneous features behind or preserving them for future versions."
             }
           />
           <CardComponent
             icon={<ScrollText className="w-12 h-12 text-red-600" />}
             label="Cost reductions"
             description={
-              "By limiting the feature list to the basic core required to confirm your product's assumptions, you reduce both risk and expense. You will spend less money on product development and throughout the early iteration phase since fewer features mean less upkeep."
+              "By limiting the feature list to the basic core required to confirm your products assumptions, you reduce both risk and expense. You will spend less money on product development and throughout the early iteration phase since fewer features mean less upkeep."
             }
           />
         </div>
@@ -68,7 +68,7 @@ const HomeWhatWeDo = () => {
             icon={<GlassWater className="w-12 h-12 text-blue-300" />}
             label="Test The Waters"
             description={
-              "Choosing the appropriate agency is an important business decision, and we want to make sure we're the ideal fit for you. With a Product Scope, you employ a tiny portion of the project's time and budget to evaluate our commercial partnership. You get to know us before committing to the entire project."
+              "Choosing the appropriate agency is an important business decision, and we want to make sure were the ideal fit for you. With a Product Scope, you employ a tiny portion of the projects time and budget to evaluate our commercial partnership. You get to know us before committing to the entire project."
             }
           />
           <CardComponent

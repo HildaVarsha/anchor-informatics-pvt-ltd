@@ -20,7 +20,7 @@ const HomeOpenSourceproject = () => {
       <p className="text-lg py-6 max-w-lg">
         Developing an MVP is the simplest path to business growth, particularly
         with the assistance of professional product builders. You can
-        concentrate on the company's goal thanks to it. Initially, it is safer
+        concentrate on the companys goal thanks to it. Initially, it is safer
         and faster to bring in a team of professionals rather than recruiting an
         in-house team to jumpstart your business and get things going.
       </p>
