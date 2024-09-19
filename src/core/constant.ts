@@ -21,7 +21,7 @@ export async function sendEmail({
   // Define email options
   let mailOptions = {
     from: "regis@gmail.com",
-    to: "hildavarsha@gmail.com",
+    to: "info@anchorinformatics.co.uk",
     // to: "info@anchorinformatics.co.uk",
     subject: `Mail from ${email}`,
     text: content,
