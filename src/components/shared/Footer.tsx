@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="container mx-auto flex  flex-col md:flex-row justify-between border-b border-slate-600 pb-8">
         <div>
           <Image
-            src={""}
+            src={"/logo.jpg"}
             alt="Logo"
             width={150}
             height={150}
