@@ -7,7 +7,9 @@ const TalkAbout = () => {
     return (
       <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
         <Image
-          src={"/"}
+          src={
+            "https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          }
           alt="Location"
           width={250}
           height={100}
@@ -33,7 +35,7 @@ const TalkAbout = () => {
       <div className="container mx-auto px-4 md:px-0 py-16 flex flex-col md:flex-row justify-between">
         <div>
           <Image
-            src={"/"}
+            src={"/logo.jpg"}
             alt="Logo"
             width={100}
             height={100}

@@ -22,17 +22,11 @@ const HomeAwards = () => {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 py-6 gap-y-32">
         <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-        <ImageComponent src="https://images.pexels.com/photos/10950702/pexels-photo-10950702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        <ImageComponent src="https://images.pexels.com/photos/2098604/pexels-photo-2098604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        <ImageComponent src="https://images.pexels.com/photos/776527/pexels-photo-776527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        <ImageComponent src="https://images.pexels.com/photos/6565251/pexels-photo-6565251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        <ImageComponent src="https://images.pexels.com/photos/7005488/pexels-photo-7005488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        <ImageComponent src="https://images.pexels.com/photos/7005035/pexels-photo-7005035.jpeg?auto=compress&cs=tinysrgb&w=800" />
       </div>
     </div>
   );
