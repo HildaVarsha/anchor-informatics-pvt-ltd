@@ -8,14 +8,15 @@ import {
   CarouselPrevious,
 } from "../ui";
 import Image from "next/image";
+import { SERVICE_OUTPUT } from "@/core/ServicesConstants";
 
 const ServicesOutput = () => {
-  const OutputCard = () => {
+  const OutputCard = ({image,text,title}:{image:string|any,title:string|any, text:string|any }) => {
     return (
       <Card className="border-0 rounded-none flex flex-col items-center justify-center">
         <Image
           src={
-            "https://images.pexels.com/photos/7648474/pexels-photo-7648474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            image||"https://images.pexels.com/photos/7648474/pexels-photo-7648474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           }
           alt="Services Output"
           width={100}
@@ -23,10 +24,9 @@ const ServicesOutput = () => {
           className="w-full h-52 object-cover"
         />
         <div className="p-4">
-          <h1 className="text-3xl font-bold py-8">Industry leaders entrust </h1>
+          <h1 className="text-3xl font-bold py-8">{title}</h1>
           <p className="text-lg">
-            We don’t just serve the industry – we’re part of the industry and
-            build technology that is used worldwide
+           {text}
           </p>
         </div>
       </Card>
@@ -45,9 +45,9 @@ const ServicesOutput = () => {
           className="w-full pt-12"
         >
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
+            {SERVICE_OUTPUT.map((item, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-                <OutputCard />
+                <OutputCard {...item} />
               </CarouselItem>
             ))}
           </CarouselContent>

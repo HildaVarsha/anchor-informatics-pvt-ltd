@@ -9,23 +9,19 @@ const AboutProgressCard = () => {
         <div className="flex items-center gap-4 w-52">
           <h1 className="text-5xl">80</h1>
           <PlusIcon className="w-10 h-10 font-semibold text-pink-600" />
-          <p>Completed projects</p>
+          <div>Successful Projects</div>
         </div>
         <div className="flex items-center gap-4 w-52">
-          <h1 className="text-5xl">80</h1>
+          <h1 className="text-5xl">20</h1>
           <PlusIcon className="w-10 h-10 font-semibold text-pink-600" />
-          <p>Completed projects</p>
+          <div>Happy Clients</div>
         </div>
         <div className="flex items-center gap-4 w-52">
-          <h1 className="text-5xl">80</h1>
+          <h1 className="text-5xl">8</h1>
           <PlusIcon className="w-10 h-10 font-semibold text-pink-600" />
-          <p>Completed projects</p>
+          <div>Stunning Awards</div>
         </div>
-        <div className="flex items-center gap-4 w-52">
-          <h1 className="text-5xl">80</h1>
-          <PlusIcon className="w-10 h-10 font-semibold text-pink-600" />
-          <p>Completed projects</p>
-        </div>
+        
       </div>
     </Card>
   );

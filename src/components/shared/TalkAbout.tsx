@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui";
 import Link from "next/link";
+import { SERVICE_LOCATIONS } from "@/core/ServicesConstants";
 
 const TalkAbout = () => {
-  const LocationComp = ({ title, src }: { title: string; src: string }) => {
+  const LocationComp = ({address,email,phone, title, src }: { title: string; src: string, address:string|any,phone:string|any, email:string|any }) => {
     return (
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-4">
         <Image
@@ -17,16 +18,16 @@ const TalkAbout = () => {
         <div>
           <h1 className="text-3xl font-bold text-white pb-4">{title}</h1>
           <p className="text-white">
-            Address: R. Adriano C. de Oliveira 4A, 1600-312
+            {address}
           </p>
-          <Link href="tel:+44 7734456458" className="py-2 text-white">
-            Phone: <a className="text-pink-600">+44 7734456458</a>
+          <Link href={`tel:${phone}`} className="py-2 text-white">
+            Phone: <a className="text-pink-600">{phone}</a>
           </Link>
           <Link
-            href="mailto:nfo@anchorinformatics.co.uk"
+            href={`mailto:${email}`}
             className="text-white"
           >
-            Email: <a className="text-pink-600">info@anchorinformatics.co.uk</a>
+            Email: <a className="text-pink-600">{email}</a>
           </Link>
         </div>
       </div>
@@ -51,22 +52,22 @@ const TalkAbout = () => {
           </Button>
         </div>
         <div className="flex flex-col gap-8 pt-8 md:pt-0">
-          <LocationComp
-            title={"London"}
-            src={
-              "https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            }
-          />
-          <LocationComp
-            title={"Dubai"}
-            src={
-              "https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            }
-          />
-          <LocationComp
-            title={"Hydrabad"}
-            src="https://images.pexels.com/photos/1537493/pexels-photo-1537493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          />
+          {SERVICE_LOCATIONS?.map((item, index)=>{
+            return (
+
+              <LocationComp
+              key={index}
+              address={item.address}
+              email={item.email}
+              phone={item.phone}
+              title={item.name}
+              src={
+               item.image 
+              }
+              />
+            )
+          })}
+          
         </div>
       </div>
     </div>
