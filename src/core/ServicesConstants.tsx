@@ -62,3 +62,35 @@ export const HOW_IT_WORKS = [
     points: [],
   },
 ];
+export const newsData = [
+  {
+    id: 1,
+    title: "Cloud Computing Adoption Surges Among SMEs",
+    description:
+      "As small and medium-sized enterprises (SMEs) continue to embrace digital transformation, cloud computing services have seen unprecedented growth. Businesses are increasingly turning to the cloud for scalable storage, enhanced security, and improved collaboration tools. Analysts predict this trend will continue as remote work remains prevalent.",
+  },
+  {
+    id: 2,
+    title: "AI-Powered IT Services Revolutionize Customer Support",
+    description:
+      "Artificial intelligence (AI) is reshaping IT services, particularly in customer support. AI chatbots and virtual assistants are now being integrated into help desks, allowing businesses to provide 24/7 support. This shift is reducing response times, enhancing user experiences, and lowering operational costs for many organizations.",
+  },
+  {
+    id: 3,
+    title: "Cybersecurity Services Demand at an All-Time High",
+    description:
+      "With rising cyber threats, businesses are increasingly investing in cybersecurity services. From data protection to threat monitoring, IT security providers are deploying advanced solutions such as Zero Trust Architecture (ZTA) and AI-driven threat detection to protect sensitive data. The cybersecurity market is expected to grow exponentially in the coming years.",
+  },
+  {
+    id: 4,
+    title: "Managed IT Services Expand with Remote Workforce Solutions",
+    description:
+      "As companies adjust to hybrid and fully remote work models, managed IT services are evolving. These services now focus on supporting remote infrastructure, ensuring secure VPNs, providing cloud services, and managing remote device setups. This shift is enabling businesses to operate efficiently without physical office dependencies.",
+  },
+  {
+    id: 5,
+    title: "5G Networks Drive Innovation in IT Services",
+    description:
+      "The global rollout of 5G networks is accelerating the deployment of IT services across industries. From faster data transfer rates to enhanced IoT integration, 5G is enabling innovative solutions in cloud computing, AI, and edge computing. IT service providers are leveraging 5G to offer more robust and scalable solutions.",
+  },
+];
