@@ -8,17 +8,21 @@ import {
   CarouselPrevious,
 } from "../ui";
 import { ProjectorIcon } from "lucide-react";
+import { newsData } from "@/core/ServicesConstants";
 
 const HomeNews = () => {
-  const NewsCard = () => {
+  const NewsCard = ({
+    title,
+    description,
+  }: {
+    title: string;
+    description: string;
+  }) => {
     return (
-      <Card className="p-6 flex flex-col items-center justify-center">
+      <Card className="p-6 flex flex-col items-center justify-center h-[600px]">
         <ProjectorIcon className="w-12 h-12 text-sky-600" />
-        <h1 className="text-3xl font-bold py-8">Industry leaders entrust </h1>
-        <p className="text-lg">
-          We don’t just serve the industry – we’re part of the industry and
-          build technology that is used worldwide
-        </p>
+        <h1 className="text-3xl font-bold py-8">{title} </h1>
+        <p className="text-lg">{description}</p>
       </Card>
     );
   };
@@ -35,9 +39,9 @@ const HomeNews = () => {
         className="w-full py-6"
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {newsData.map((item, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-              <NewsCard />
+              <NewsCard title={item?.title} description={item?.description} />
             </CarouselItem>
           ))}
         </CarouselContent>
