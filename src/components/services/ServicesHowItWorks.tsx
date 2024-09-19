@@ -49,6 +49,7 @@ const ServicesHowItWorks = () => {
                 step_title={item.step_title}
                 text={item.text}
                 title={item.title}
+                key={item.title}
               />
             );
           })}
