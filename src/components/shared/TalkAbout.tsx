@@ -21,7 +21,7 @@ const TalkAbout = () => {
             {address}
           </p>
           <Link href={`tel:${phone}`} className="py-2 text-white">
-            Phone: <a className="text-pink-600">{phone}</a>
+            Phone: <a className="text-pink-600">{phone}</a> &nbsp;
           </Link>
           <Link
             href={`mailto:${email}`}

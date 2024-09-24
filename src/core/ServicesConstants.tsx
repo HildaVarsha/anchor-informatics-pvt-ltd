@@ -181,9 +181,19 @@ export const OTHER_SERVICES = [
 export const SERVICE_LOCATIONS = [
   {
     name:"London",
-    address:"R. Adriano C. de Oliveira 4A, 1600-312",
+    address:"292 Plashet Grove, London E6 1DQ, UK",
     phone:"+44 7734456458",
     email:"info@anchorinformatics.co.uk",
     image:"/london.jpg"
+  },
+  {
+    name:"India",
+    address:"Vaishnavi's Cynosure, Gachibowli, Hyderabad, Telangana 500032",
+    phone:"+44 7734456458",
+    email:"info@anchorinformatics.co.uk",
+    image:"/hyderabad.png"
   }
+  // 2-48/5/6, Gachibowli Rd, Opp. RTTC, Telecom Nagar Extension, Gachibowli, Hyderabad, Telangana 500032
 ]
+
+
