@@ -9,19 +9,14 @@ const CareerAvailablePositions = () => {
         Available Positions
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {OPEN_CAREERS?.map((item, index)=>{
+        {OPEN_CAREERS?.map((item, index) => {
           return (
-
-            
-            <Card className="p-4 rounded-lg w-fit">
-          <h1 className="font-semibold text-xl pb-4">
-            {item.title}
-          </h1>
-          <Button>Apply Now</Button>
-        </Card>
-        )
-      })}
-        
+            <Card key={index} className="p-4 rounded-lg w-fit">
+              <h1 className="font-semibold text-xl pb-4">{item.title}</h1>
+              <Button>Apply Now</Button>
+            </Card>
+          );
+        })}
       </div>
     </div>
   );

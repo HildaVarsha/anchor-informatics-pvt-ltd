@@ -32,7 +32,7 @@ const OtherServices = () => {
           {OTHER_SERVICES?.map((item, index) => {
             return (
               
-              <div className="w-full md:w-[30%]">
+              <div key={index} className="w-full md:w-[30%]">
               <CardComponent
                 key={index}
                 icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}

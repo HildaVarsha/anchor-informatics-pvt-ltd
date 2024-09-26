@@ -23,7 +23,7 @@ const CareerWorkWithUs = () => {
           {WORK_WITH_US?.map((item, index)=>{
             return(
 
-              <CareerCard {...item} />
+              <CareerCard key={index} {...item} />
             )
           })}
         </div>
