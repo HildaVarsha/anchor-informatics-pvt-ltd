@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card } from "../ui";
+import { OPEN_CAREERS } from "@/core/AboutUsConstans";
 
 const CareerAvailablePositions = () => {
   return (
@@ -8,42 +9,19 @@ const CareerAvailablePositions = () => {
         Available Positions
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <Card className="p-4 rounded-lg w-fit">
+        {OPEN_CAREERS?.map((item, index)=>{
+          return (
+
+            
+            <Card className="p-4 rounded-lg w-fit">
           <h1 className="font-semibold text-xl pb-4">
-            Full Stack Developer(React Js/Node Js)
+            {item.title}
           </h1>
           <Button>Apply Now</Button>
         </Card>
-        <Card className="p-4 rounded-lg w-fit">
-          <h1 className="font-semibold text-xl pb-4">
-            Full Stack Developer(React Js/Node Js)
-          </h1>
-          <Button>Apply Now</Button>
-        </Card>
-        <Card className="p-4 rounded-lg w-fit">
-          <h1 className="font-semibold text-xl pb-4">
-            Full Stack Developer(React Js/Node Js)
-          </h1>
-          <Button>Apply Now</Button>
-        </Card>
-        <Card className="p-4 rounded-lg w-fit">
-          <h1 className="font-semibold text-xl pb-4">
-            Full Stack Developer(React Js/Node Js)
-          </h1>
-          <Button>Apply Now</Button>
-        </Card>
-        <Card className="p-4 rounded-lg w-fit">
-          <h1 className="font-semibold text-xl pb-4">
-            Full Stack Developer(React Js/Node Js)
-          </h1>
-          <Button>Apply Now</Button>
-        </Card>
-        <Card className="p-4 rounded-lg w-fit">
-          <h1 className="font-semibold text-xl pb-4">
-            Full Stack Developer(React Js/Node Js)
-          </h1>
-          <Button>Apply Now</Button>
-        </Card>
+        )
+      })}
+        
       </div>
     </div>
   );

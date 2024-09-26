@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "../ui";
 import Image from "next/image";
 import { ProjectorIcon } from "lucide-react";
+import { OTHER_SERVICES } from "@/core/ServicesConstants";
 
 const OtherServices = () => {
   const CardComponent = ({
@@ -27,45 +28,22 @@ const OtherServices = () => {
         Other Services We provide
       </h1>
       <div className="py-12">
-        <div className="flex flex-col md:flex-row items-center gap-6">
-          <CardComponent
-            icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
-            label="Product Scope"
-            description={
-              " We help entrepreneurs and business leaders build and launch innovative custom software solutions"
-            }
-          />
-          <CardComponent
-            icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
-            label="Product Scope"
-            description={
-              " We help entrepreneurs and business leaders build and launch innovative custom software solutions"
-            }
-          />
-          <CardComponent
-            icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
-            label="Product Scope"
-            description={
-              " We help entrepreneurs and business leaders build and launch innovative custom software solutions"
-            }
-          />
+        <div className="flex flex-col md:flex-row flex-wrap  items-center justify-around gap-6">
+          {OTHER_SERVICES?.map((item, index) => {
+            return (
+              
+              <div className="w-full md:w-[30%]">
+              <CardComponent
+                key={index}
+                icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
+                label={item.title}
+                description={item.text}
+              />
+              </div>
+            );
+          })}
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-6 max-w-3xl mx-auto">
-          <CardComponent
-            icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
-            label="Product Scope"
-            description={
-              " We help entrepreneurs and business leaders build and launch innovative custom software solutions"
-            }
-          />
-          <CardComponent
-            icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
-            label="Product Scope"
-            description={
-              " We help entrepreneurs and business leaders build and launch innovative custom software solutions"
-            }
-          />
-        </div>
+        
       </div>
     </div>
   );

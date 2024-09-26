@@ -94,3 +94,106 @@ export const newsData = [
       "The global rollout of 5G networks is accelerating the deployment of IT services across industries. From faster data transfer rates to enhanced IoT integration, 5G is enabling innovative solutions in cloud computing, AI, and edge computing. IT service providers are leveraging 5G to offer more robust and scalable solutions.",
   },
 ];
+
+export const SERVICE_OUTPUT = [
+  {
+    image: "/trust.jpg",
+    title: "Industry Leaders Entrust Us",
+    text: "We don’t just serve the industry – we’re part of the industry and build technology that is used worldwide.",
+  },
+  {
+    image: "/research.jpg",
+    title: "Global Reach, Local Impact",
+    text: "Our services extend beyond borders, delivering tailored solutions that resonate with local markets while maintaining a global standard of excellence.",
+  },
+  {
+    image: "/innovation.jpg",
+    title: "Innovating Together",
+    text: "We partner with our clients to co-create transformative services that drive measurable results and enhance productivity across various sectors.",
+  },
+  {
+    image: "/software_quality.jpg",
+    title: "Quality You Can Measure",
+    text: "Our output isn’t just about quantity; it’s about delivering exceptional quality that consistently meets and exceeds industry benchmarks.",
+  },
+  {
+    image: "/success.jpg",
+    title: "Empowering Your Success",
+    text: "We provide strategic services designed to empower businesses, ensuring that every outcome contributes directly to your long-term growth and success.",
+  },
+];
+
+export const WHY_CHOOSE_US = [
+  {
+    title: "Tailored Solutions for Unique Challenges",
+    text: "We specialize in creating bespoke software solutions tailored to the specific needs of your business, ensuring that every product we develop addresses your unique challenges.",
+  },
+  {
+    title: "Expert Guidance at Every Step",
+    text: "Our team of experienced professionals is dedicated to guiding you through the entire development process, from initial concept to successful launch and beyond.",
+  },
+  {
+    title: "Focus on MVP and Beyond",
+    text: "We help you validate your ideas with Minimum Viable Products (MVPs), allowing you to test the market quickly and efficiently before scaling to a full-fledged solution.",
+  },
+  {
+    title: "Commitment to Quality and Innovation",
+    text: "Quality is at the heart of what we do. We leverage the latest technologies and best practices to ensure that your software is not only functional but also innovative and competitive.",
+  },
+  {
+    title: "Seamless Scaling and Support",
+    text: "As your business grows, we’re here to provide ongoing support and scaling solutions, ensuring that your software evolves in tandem with your business needs.",
+  },
+  {
+    title: "Cross-Industry Expertise",
+    text: "Our diverse experience across various verticals means we understand the unique dynamics of your industry, enabling us to deliver solutions that drive real results.",
+  },
+];
+
+export const OTHER_SERVICES = [
+  {
+    title: "Product Scope Definition",
+    text: "We work closely with you to define the scope of your product, ensuring that every feature aligns with your vision and meets market demands.",
+  },
+  {
+    title: "UX/UI Design Services",
+    text: "Our design team crafts intuitive and engaging user experiences, ensuring your software is not only functional but also visually appealing and easy to use.",
+  },
+  {
+    title: "Full-Cycle Software Development",
+    text: "From ideation to deployment, we offer comprehensive software development services that cover every stage of the product lifecycle, ensuring seamless execution and delivery.",
+  },
+  {
+    title: "Quality Assurance and Testing",
+    text: "We prioritize quality at every step. Our rigorous testing processes ensure that your software is reliable, secure, and performs flawlessly before it reaches your users.",
+  },
+  {
+    title: "Cloud Solutions and Integration",
+    text: "We provide cloud-based solutions that enhance scalability and accessibility, along with seamless integration with existing systems to optimize your operations.",
+  },
+  {
+    title: "Ongoing Maintenance and Support",
+    text: "Our commitment doesn’t end at launch. We offer ongoing maintenance and support services to ensure your software remains up-to-date and continues to meet your business needs.",
+  },
+];
+
+
+export const SERVICE_LOCATIONS = [
+  {
+    name:"London",
+    address:"292 Plashet Grove, London E6 1DQ, UK",
+    phone:"+44 7734456458",
+    email:"info@anchorinformatics.co.uk",
+    image:"/london.jpg"
+  },
+  {
+    name:"India",
+    address:"Vaishnavi's Cynosure, Gachibowli, Hyderabad, Telangana 500032",
+    phone:"+44 7734456458",
+    email:"info@anchorinformatics.co.uk",
+    image:"/hyderabad.png"
+  }
+  // 2-48/5/6, Gachibowli Rd, Opp. RTTC, Telecom Nagar Extension, Gachibowli, Hyderabad, Telangana 500032
+]
+
+

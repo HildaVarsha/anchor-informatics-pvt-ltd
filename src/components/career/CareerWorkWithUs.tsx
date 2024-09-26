@@ -1,16 +1,14 @@
 import React from "react";
 import { Card } from "../ui";
+import { WORK_WITH_US } from "@/core/AboutUsConstans";
 
 const CareerWorkWithUs = () => {
-  const CareerCard = () => {
+  const CareerCard = ({text,title}:{title:string|any, text:string|any}) => {
     return (
       <Card className="p-8">
-        <h1 className="text-3xl font-semibold pb-6">Shape the Future</h1>
+        <h1 className="text-3xl font-semibold pb-6">{title}</h1>
         <p className="text-lg py-6">
-          We work with business leaders and entrepreneurs to disrupt and push
-          their industries forward. From startup ideas to enterprise-level
-          product & software development, we work together as a team to
-          transform our clients’ ideas into reality.
+          {text}
         </p>
       </Card>
     );
@@ -22,11 +20,12 @@ const CareerWorkWithUs = () => {
           What it Means to Work With Us
         </h1>
         <div className="pt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <CareerCard />
-          <CareerCard />
-          <CareerCard />
-          <CareerCard />
-          <CareerCard />
+          {WORK_WITH_US?.map((item, index)=>{
+            return(
+
+              <CareerCard {...item} />
+            )
+          })}
         </div>
       </div>
     </div>
