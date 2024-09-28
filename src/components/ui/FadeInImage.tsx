@@ -22,8 +22,8 @@ const FadeInImage = ({ image }: { image: string | any }) => {
     }
 
     return () => {
-      // setIsVisible(false);
-      // if (imageRef.current) observer.disconnect();
+      setIsVisible(false);
+      if (imageRef.current) observer.disconnect();
     };
   }, []);
 
