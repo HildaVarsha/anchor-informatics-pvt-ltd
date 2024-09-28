@@ -22,13 +22,15 @@ const FadeInImage = ({ image }: { image: string | any }) => {
     }
 
     return () => {
-      if (imageRef.current) observer.disconnect();
+      // setIsVisible(false);
+      // if (imageRef.current) observer.disconnect();
     };
   }, []);
 
   return (
     <>
       <Image
+        loading="lazy"
         src={image}
         alt="Product One"
         width={100}
