@@ -31,19 +31,17 @@ const OtherServices = () => {
         <div className="flex flex-col md:flex-row flex-wrap  items-center justify-around gap-6">
           {OTHER_SERVICES?.map((item, index) => {
             return (
-              
-              <div className="w-full md:w-[30%]">
-              <CardComponent
-                key={index}
-                icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
-                label={item.title}
-                description={item.text}
-              />
+              <div key={index} className="w-full md:w-[30%]">
+                <CardComponent
+                  key={index}
+                  icon={<ProjectorIcon className="w-12 h-12 text-pink-600" />}
+                  label={item.title}
+                  description={item.text}
+                />
               </div>
             );
           })}
         </div>
-        
       </div>
     </div>
   );
