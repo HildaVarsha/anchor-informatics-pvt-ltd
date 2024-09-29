@@ -6,7 +6,7 @@ const Footer = () => {
   const Header = ({ label }: { label: string }) => {
     return <h1 className="text-4xl font-bold text-white pb-8">{label}</h1>;
   };
-  const LinkComp = ({ label }: { label: string }) => {
+  const LinkComp = ({ label, href }: { label: string; href: string }) => {
     return (
       <Link href={"#"} className="text-lg  text-white pb-4">
         {label}
@@ -27,30 +27,30 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <Header label="Global" />
-          <LinkComp label={"Work"} />
-          <LinkComp label={"About Us"} />
-          <LinkComp label={"Blog"} />
-          <LinkComp label={"News Letter"} />
-          <LinkComp label={"News"} />
-          <LinkComp label={"Careers"} />
+          <LinkComp label={"Work"} href="/work" />
+          <LinkComp label={"About Us"} href="/about-us" />
+          <LinkComp label={"Blog"} href="/" />
+          <LinkComp label={"News Letter"} href="/" />
+          <LinkComp label={"News"} href="/" />
+          <LinkComp label={"Careers"} href="/careers" />
         </div>
         <div className="flex flex-col">
           <Header label="Services" />
-          <LinkComp label={"Product Scope"} />
-          <LinkComp label={"UX/UI"} />
-          <LinkComp label={"MVP Builder"} />
-          <LinkComp label={"Dedicated Teams"} />
-          <LinkComp label={"Custome Software Development"} />
+          <LinkComp label={"Product Scope"} href="/" />
+          <LinkComp label={"UX/UI"} href="/" />
+          <LinkComp label={"MVP Builder"} href="/" />
+          <LinkComp label={"Dedicated Teams"} href="/" />
+          <LinkComp label={"Custome Software Development"} href="/" />
         </div>
         <div className="flex flex-col">
           <Header label="Technology" />
-          <LinkComp label={"Tech"} />
-          <LinkComp label={"Open Source"} />
+          <LinkComp label={"Tech"} href="/" />
+          <LinkComp label={"Open Source"} href="/" />
         </div>
         <div className="flex flex-col">
           <Header label="Build" />
-          <LinkComp label={"Play with Pricing"} />
-          <LinkComp label={"Book a Call"} />
+          <LinkComp label={"Play with Pricing"} href="/" />
+          <LinkComp label={"Book a Call"} href="/" />
         </div>
       </div>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between pt-8">
