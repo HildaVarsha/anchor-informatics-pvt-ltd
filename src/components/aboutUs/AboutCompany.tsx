@@ -6,7 +6,9 @@ const AboutCompany = () => {
   return (
     <div className="px-4 md:px-0 py-24 container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
       <div className="w-full">
-        <h1 className="text-5xl font-bold pb-6">Hello, we’re Altar.</h1>
+        <h1 className="text-5xl font-bold pb-6">
+          Hello, we are Anchor Informatics.
+        </h1>
         <p className="text-lg pb-6">
           Our DNA is made of ex-startup founders and the top talent in Product,
           UX/UI, Software development and Machine & Deep Learning. We came

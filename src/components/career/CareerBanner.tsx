@@ -9,9 +9,8 @@ const CareerBanner = () => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100vw", // Full width of the viewport
-        height: "600px",
       }}
-      className="flex items-center pl-12 h-[600px]"
+      className="flex items-center pl-12 h-full md:h-[800px]"
     >
       <div className="max-w-lg text-white">
         <h1 className="text-6xl font-bold">

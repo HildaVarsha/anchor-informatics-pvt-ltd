@@ -14,7 +14,7 @@ const HomeTeamMembers = () => {
     description: string;
   }) => {
     return (
-      <Card className="w-full h-[600px]">
+      <Card className="w-full h-full md:h-[600px]">
         <Image
           src={src}
           alt="Team Members"
@@ -26,7 +26,7 @@ const HomeTeamMembers = () => {
           <h1 className="text-3xl font-bold">{title}</h1>
           <p className="text-lg py-4 text-center">{description}</p>
           <Link
-            href="#"
+            href={`mailto:info@anchorinformatics.co.uk`}
             className="font-semibold text-pink-600 text-center mt-6"
           >
             CONTACT VIA EMAIL

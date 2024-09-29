@@ -20,7 +20,7 @@ const HomeWhatWeDo = () => {
     description: string;
   }) => {
     return (
-      <Card className="p-4 flex-grow w-full h-96 flex flex-col">
+      <Card className="p-4 flex-grow w-full h-full md:h-96 flex flex-col">
         <div>{icon}</div>
         <h1 className="text-3xl font-bold py-6">{label}</h1>
         <p className="text-lg flex-grow">{description}</p>
